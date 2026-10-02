@@ -4,6 +4,7 @@ src/
 .python-version
 uv.lock
 pyproject.toml
+/dashboards/.streamlit/secrets.toml
 gcp-key.json
 *.json.key
 terraform/.terraform*
