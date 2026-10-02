@@ -74,8 +74,8 @@ def load_data(_client, dataset, symbols, start, end):
 # ------------------------------------------------------------------ sidebar
 with st.sidebar:
     st.title("📈 Controls")
-    project = st.text_input("GCP project", value=os.environ.get("GCP_PROJECT", ""),disabled=True)
-    dataset = st.text_input("BigQuery dataset", value=os.environ.get("BQ_DATASET", "binance_analytics"),disabled=True)
+    project = st.secrets["gcp_service_account"]['project_id'] if "gcp_service_account" in st.secrets else os.environ.get("GCP_PROJECT")
+    dataset = 'binance_analytics'
     fq_dataset = f"{project}.{dataset}" if project else dataset
     if not project:
         st.warning("Set the GCP project id to load data.")
