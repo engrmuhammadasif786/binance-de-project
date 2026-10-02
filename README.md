@@ -5,7 +5,7 @@ public Binance REST API, stores it in a GCP data lake (GCS), loads it into a
 BigQuery data warehouse, transforms it with dbt, and powers a Looker Studio
 dashboard.
 
-**Dashboard:** [Looker Studio link — add yours here]
+**Dashboard:** https://binance-de-project.streamlit.app/
 
 ## Problem statement
 
