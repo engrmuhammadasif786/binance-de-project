@@ -1,0 +1,4 @@
+project_id  = "your-gcp-project-id"
+region      = "us-central1"
+bucket_name = "your-unique-binance-lake-bucket"
+bq_dataset  = "binance_analytics"

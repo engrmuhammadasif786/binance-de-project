@@ -1,0 +1,7 @@
+version: 2
+sources:
+  - name: raw
+    database: "{{ env_var('GCP_PROJECT') }}"
+    schema: "{{ env_var('BQ_DATASET', 'binance_analytics') }}"
+    tables:
+      - name: raw_candles

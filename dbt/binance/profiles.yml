@@ -1,0 +1,11 @@
+binance:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: "{{ env_var('GCP_PROJECT') }}"
+      dataset: "{{ env_var('BQ_DATASET', 'binance_analytics') }}"
+      threads: 4
+      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS') }}"
+      location: us-central1

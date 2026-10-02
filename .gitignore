@@ -1,0 +1,16 @@
+.env
+.venv/
+src/
+.python-version
+uv.lock
+pyproject.toml
+gcp-key.json
+*.json.key
+terraform/.terraform*
+terraform/terraform.tfvars
+terraform/*.json
+__pycache__/
+dbt/binance/target/
+dbt/binance/dbt_packages/
+data/
+logs/

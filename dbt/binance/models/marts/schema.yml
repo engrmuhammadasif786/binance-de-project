@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: fact_daily_metrics
+    description: Daily per-symbol OHLCV metrics with returns and volatility
+    columns:
+      - name: symbol
+        tests: [not_null]
+      - name: open_date
+        tests: [not_null]
+      - name: daily_return_pct
