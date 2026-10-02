@@ -1,4 +1,4 @@
-# Binance Market Analytics — DE Zoomcap Capstone Project
+# Binance Market Analytics — DE Zoomcamp Capstone Project
 
 An end-to-end data pipeline that ingests daily OHLCV candlestick data from the
 public Binance REST API, stores it in a GCP data lake (GCS), loads it into a
